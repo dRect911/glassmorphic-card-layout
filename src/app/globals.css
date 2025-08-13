@@ -10,17 +10,21 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+
+  --color-black: oklch(0% 0 0);
+  --color-night: oklch(5.02% 0.007 267.45);
+  --color-white-smoke: oklch(96.38% 0.003 267.45);
+  --color-white: oklch(100% 0 0);
+  --color-gold: oklch(84.44% 0.169 88.08);
+  --color-safety-orange: oklch(67.75% 0.186 64.91);
+  --color-rose: oklch(58.37% 0.222 17.51);
+  --color-steel-pink: oklch(50.45% 0.225 330.15);
+  --color-violet: oklch(44.22% 0.198 290.49);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
