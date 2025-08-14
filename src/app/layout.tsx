@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Lexend } from "next/font/google";
 import "./globals.css";
 
-const lexendSans = Geist({
+const lexendSans = Lexend({
   variable: "--font-lexend-sans",
   subsets: ["latin"],
 });
