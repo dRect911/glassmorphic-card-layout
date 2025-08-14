@@ -8,7 +8,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-lexend-sans);
   --font-mono: var(--font-geist-mono);
 
 
@@ -27,4 +27,21 @@
 }
 
 body {
+}
+
+body {
+  /* background-image: url('../../public/Qqquad\ Bauhaus\ Patterns.svg'); */
+  background-repeat: repeat;
+  background-size: 1600px 900px; /* size of pattern */
+}
+
+body::before {
+  content: "";
+  position: fixed; /* stays in place on scroll */
+  inset: 0;
+  background-image: url('../../public/Qqquad\ Bauhaus\ Patterns.svg');
+  background-repeat: repeat;
+  background-size: 1600px 900px;
+  opacity: 0.3; /* adjust to taste */
+  z-index: -1; /* stay behind everything */
 }
